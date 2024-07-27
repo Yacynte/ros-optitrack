@@ -62,7 +62,7 @@ Before you begin, ensure you have the following installed:
 
 ## Usage
 
-**Run the Navigation Node**:
+1. **Run the Navigation Node**:
     ```bash
     roslaunch ros-optitrack tello_optitrack.launch & rosrun rviz rviz -f world
 
