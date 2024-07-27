@@ -54,7 +54,7 @@ Before you begin, ensure you have the following installed:
 4. **Network Setup**:
     The Tello DJI drone cannot have direct communications between the connected devices. To enable the streaming of OptiTrack data from one PC to another, a range extender is required. The network setup is illustrated in the following diagram:
 
-    ![Network Connection](network_diagram.jpg)
+    ![Network Connection](network_diagram.png)
 
     In this setup:
     The Hotspot provides the initial network connection.
