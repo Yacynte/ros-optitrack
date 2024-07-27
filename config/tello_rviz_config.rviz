@@ -1,0 +1,25 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+    Displays:
+      - Class: rviz/TF
+        Name: TF
+        Enabled: true
+        Frame Timeout: 30.0
+        Marker Scale: 1.0
+        Show Axes: true
+        Show Names: true
+        Show Arrows: true
+    Background Color: [48, 48, 48]
+    Fixed Frame: world
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Views
+    Name: Views
+    Current View: Top Down Ortho
+    View Manager:
+      Current View: Top Down Ortho
+      Views:
+        - Class: rviz/TopDownOrtho
+          Name: Top Down Ortho
+          Type: TopDownOrtho

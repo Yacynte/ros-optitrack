@@ -1,0 +1,34 @@
+<launch>
+    <!-- Launch the VRPN client -->
+    <include file="$(find vrpn_client_ros)/launch/sample.launch">
+        <arg name="server" value="192.168.10.3" />
+    </include>
+
+    <!-- Launch the Tello driver 
+    <include file="$(find tello_driver)/launch/tello_driver.launch" /> 
+    -->
+    <!-- Launch the Tello controller node -->
+    <node name="tello_controller" pkg="tello_drive" type="tello_control.py" output="screen">
+        <param name="vrpn_topic" value="/vrpn_client_node/tello/pose" />
+        <param name="tello_cmd_vel_topic" value="/tello/cmd_vel" />
+        <param name="waypoints_topic" value="/waypoints" />
+        <param name="constant_speed" value="20" />
+        <param name="rotation_speed" value="20" />
+    </node>
+
+     <!-- Launch the waypoint publisher node -->
+    <node name="waypoint_publisher" pkg="tello_drive" type="waypoint_publisher.py" output="screen" />
+
+    <!-- Takeoff 
+    <node name="tello_takeoff" pkg="tello_driver" type="tello_takeoff" output="screen" />
+    192.168.10.3
+    192.168.188.174
+    192.168.0.102
+    -->
+    <!-- tello node
+    <node name="tello_driver_1" pkg="tello_driver" type="tello_driver_node.py" output="screen" />
+    -->
+    <!-- Launch RViz with predefined configuration 
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find tello_drive)/config/tello_rviz_config.rviz" />
+    -->
+</launch>
