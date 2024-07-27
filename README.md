@@ -66,4 +66,4 @@ Before you begin, ensure you have the following installed:
     ```bash
     roslaunch ros-optitrack tello_optitrack.launch & rosrun rviz rviz -f world
 
-    - add tf on rviz display window
+- add tf on rviz display window
