@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed:
     clone this repository into the src folder of your catkin workspace
    ```bash
    cd ~/catkin_ws/src
-   git clone https://github.com/yourusername/ros-optitrack-navigation.git
+   git clone https://github.com/Yacynte/ros-optitrack.git
    cd ros-optitrack-navigation
 
 3. **Build Package**:
