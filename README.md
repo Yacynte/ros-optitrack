@@ -9,9 +9,7 @@ Welcome to the ROS Navigation Scheme repository! This repository contains a ROS 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Code Overview](#code-overview)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -62,6 +60,10 @@ Before you begin, ensure you have the following installed:
     PC 1 and PC 2 are connected to the Range Extender via Ethernet or Wi-Fi.
     This configuration ensures that OptiTrack data can be streamed from one PC to another, facilitating the control and navigation of the Tello DJI drone.
 
-5. **Run the Navigation Node**:
+## Usage
+
+**Run the Navigation Node**:
     ```bash
     roslaunch ros-optitrack tello_optitrack.launch & rosrun rviz rviz -f world
+
+    - add tf on rviz display window
